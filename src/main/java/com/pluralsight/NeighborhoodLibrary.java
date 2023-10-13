@@ -30,8 +30,8 @@ public class NeighborhoodLibrary {
         bookList[19] = new Book(20, "543-669-852", "DARE TO WIN", "", false);
 
         do {
-            System.out.println("Welcome to your local Neighborhood Library! We have a variety of books!\n Here are the Available books\n2 - Here" +
-                    "UnAvailable books currently checked out\n0 - Exit\nPlease ENTER number associated with the book: ");
+            System.out.println("Welcome to your local Neighborhood Library! We have a variety of books!\n1 - Here are the Available books\n2 - Here" +
+                    "UnAvailable books currently checked out\n3 - Exit\nPlease ENTER number associated with the book: ");
             homeScreen = bookScan.nextInt();
             switch (homeScreen) {
                 case 1:
@@ -40,7 +40,7 @@ public class NeighborhoodLibrary {
                 case 2:
                     CheckedOutBooks(bookList,bookScan);
                     break;
-                case 0:
+                case 3:
                     System.exit(0);
                 default:
                     System.out.println("ERROR! input options on screen.");
